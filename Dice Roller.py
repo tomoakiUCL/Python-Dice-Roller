@@ -11,17 +11,17 @@ import time
 times = int( input('Amount of rolls: '))
 while(True):
     sides = int( input('Amount of sides: '))
-    if(sides > 3):
+    if(sides > 5):
         break
     else:
-        print("The dice needs to have at least 4 faces")
+        print("The dice needs to have at least 6 faces")
 wait = float( input('Seconds in between each roll: '))
 ## Sets the dice rolls so far to zero
 timesSoFar = int( 0)
 ## Runs until timesSoFar equals times
 while timesSoFar != times:
     ## Displays current dice roll
-    print (random.randint(1, sides))
+    print (random.randint(2, sides))
     ## Increments timesSoFar
     timesSoFar = timesSoFar+1
     ## Waits for wait seconds
